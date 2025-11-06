@@ -34,6 +34,7 @@ while quit == False:
     code = input()
     if (code == "Q"):
         quit = True
+        break
     else:
         for p in Product.objects.all(): #loop through all models in database
             try: #if the code is not a number or Q an error occurs when trying to cast code as an int
